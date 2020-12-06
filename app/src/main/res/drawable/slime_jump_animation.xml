@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/slime_jump_1" android:duration="100"/>
+    <item android:drawable="@drawable/slime_jump_2" android:duration="100"/>
+    <item android:drawable="@drawable/slime_jump_3" android:duration="100"/>
+    <item android:drawable="@drawable/slime_jump_4" android:duration="100"/>
+    <item android:drawable="@drawable/slime_jump_5" android:duration="100"/>
+    <item android:drawable="@drawable/slime_jump_6" android:duration="100"/>
+    <item android:drawable="@drawable/slime_jump_7" android:duration="100"/>
+    <item android:drawable="@drawable/slime_jump_8" android:duration="100"/>
+</animation-list>

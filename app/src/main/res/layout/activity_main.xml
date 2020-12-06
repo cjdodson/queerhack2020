@@ -108,6 +108,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/hello"
         app:layout_constraintVertical_bias="0.69"
-        app:srcCompat="@drawable/slimewalk" />
+        app:srcCompat="@drawable/slime_walk_animation" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

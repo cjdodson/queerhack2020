@@ -6,7 +6,6 @@ import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Spinner;
@@ -17,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.open_screen);
+        setContentView(R.layout.activity_main);
 
         ImageView otter_main = (ImageView) findViewById(R.id.otter_main);
         otter_main.setImageResource(R.drawable.otter_idle_main_animation);
@@ -30,6 +29,9 @@ public class MainActivity extends AppCompatActivity {
         pigeon_main_animation.start();
 
         ImageView slime_main = (ImageView) findViewById(R.id.slime_main);
+        slime_main.setImageResource(R.drawable.slime_walk_animation);
+        AnimationDrawable slime_main_animation = (AnimationDrawable) slime_main.getDrawable();
+        slime_main_animation.start();
 
         String[] options = {"friend", "enemy", "lover"};
 
