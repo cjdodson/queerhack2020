@@ -2,4 +2,5 @@
     <string name="app_name">QueerHack2020</string>
     <string name="greeting">Hello!<br />Pick a friend!</string>
     <string name="otter_idle">idle otter</string>
+    <string name="back">BACK</string>
 </resources>

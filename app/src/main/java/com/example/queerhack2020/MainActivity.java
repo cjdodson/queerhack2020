@@ -1,7 +1,7 @@
 package com.example.queerhack2020;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.open_screen);
 
@@ -22,16 +23,13 @@ public class MainActivity extends AppCompatActivity {
 
         ImageButton otter_button = findViewById((R.id.otter_main));
         otter_button.setOnClickListener(new View.OnClickListener() {
-            @Override
             public void onClick(View v)
             {
-                setContentView(R.layout.otter_screen);
-
-                ImageView otter_idle = (ImageView) findViewById(R.id.otter_idle);
-                otter_idle.setImageResource(R.drawable.otter_idle_animation);
-                AnimationDrawable otter_idle_animation = (AnimationDrawable)otter_idle.getDrawable();
-                otter_idle_animation.start();
+                Intent intent = new Intent(MainActivity.this, OtterActivity.class);
+                startActivity(intent);
             }
         });
+
+
     }
 }
