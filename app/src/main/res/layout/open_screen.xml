@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,17 +7,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/purple_200"
+    android:fadeScrollbars="false"
     tools:context=".MainActivity">
 
-    <EditText
+    <TextView
         android:id="@+id/hello"
         android:layout_width="0dp"
         android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:autofillHints=""
         android:ems="10"
         android:gravity="start|top"
         android:hint="@string/greeting"
-        android:inputType="textMultiLine"
         android:lineSpacingExtra="10sp"
         android:text="@string/greeting"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -29,6 +32,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.138" />
+
+    <Spinner
+        android:id="@+id/menu"
+        android:layout_width="206dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:dropDownSelector="@color/purple_200"
+        android:entries="@array/drop_down"
+        android:scrollbarSize="10dp"
+        android:spinnerMode="dropdown"
+        android:theme="@style/spinner"
+        app:layout_constraintBottom_toTopOf="@id/otter_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/hello"
+        app:layout_constraintTop_toTopOf="@id/hello"
+        app:layout_constraintVertical_bias="0.222" />
 
     <ImageButton
         android:id="@+id/otter_main"
@@ -47,4 +68,46 @@
         app:layout_constraintTop_toBottomOf="@id/hello"
         app:layout_constraintVertical_bias="0.677"
         app:srcCompat="@drawable/otter_idle_main_animation" />
+
+    <ImageButton
+        android:id="@+id/pigeon_main"
+        android:layout_width="177dp"
+        android:layout_height="172dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginLeft="108dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginRight="108dp"
+        android:background="@color/purple_200"
+        android:contentDescription="@string/pigeon_main"
+        android:scaleType="centerCrop"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hello"
+        app:layout_constraintVertical_bias="0.619"
+        app:srcCompat="@drawable/pigeon_walk_animation" />
+
+    <ImageButton
+        android:id="@+id/slime_main"
+        android:layout_width="245dp"
+        android:layout_height="244dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginLeft="74dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginRight="74dp"
+        android:background="@color/purple_200"
+        android:contentDescription="@string/slime_walk"
+        android:scaleType="centerCrop"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hello"
+        app:layout_constraintVertical_bias="0.69"
+        app:srcCompat="@drawable/slimewalk" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

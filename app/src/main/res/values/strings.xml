@@ -1,6 +1,21 @@
 <resources>
     <string name="app_name">QueerHack2020</string>
-    <string name="greeting">Hello!<br />Pick a friend!</string>
+    <string name="greeting">Hello! Pick a </string>
     <string name="otter_idle">idle otter</string>
     <string name="back">BACK</string>
+    <string name="pigeon_main">pigeon_main</string>
+    <string name="slime_walk">slime_walk</string>
+
+    <array name="drop_down">
+        <item>"friend"</item>
+        <item>"enemy"</item>
+        <item>"lover"</item>
+    </array>
+
+    <style name="spinner" parent = "@android:style/Widget.TextView">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
 </resources>
