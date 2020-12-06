@@ -24,8 +24,7 @@ public class OtterActivity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v)
             {
-                Intent intent = new Intent(OtterActivity.this, MainActivity.class);
-                startActivity(intent);
+                finish();
             }
         });
     }
