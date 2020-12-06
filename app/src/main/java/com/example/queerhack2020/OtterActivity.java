@@ -7,6 +7,7 @@ import android.os.CountDownTimer;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -80,7 +81,7 @@ public class OtterActivity extends AppCompatActivity {
             }
         });
 
-        Button back = findViewById((R.id.back));
+        ImageButton back = findViewById((R.id.backButton));
         back.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v)
             {

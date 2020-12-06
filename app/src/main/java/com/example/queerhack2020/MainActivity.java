@@ -70,5 +70,23 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ImageButton slime_button = findViewById(R.id.slime_main);
+        slime_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,SlimeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton pigeon_button = findViewById(R.id.pigeon_main);
+        pigeon_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,PigeonActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

@@ -12,7 +12,7 @@
         <item>"lover"</item>
     </array>
 
-    <style name="spinner" parent = "@android:style/Widget.TextView">
+    <style name="spinner" parent="@android:style/Widget.TextView">
         <item name="android:textSize">36sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:typeface">monospace</item>
